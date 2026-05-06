@@ -541,7 +541,7 @@ li {
   padding-left: 4px;
 }
 
-.publish-panel {
+.recipe-panel {
   display: grid;
   grid-template-columns: minmax(220px, 0.8fr) minmax(300px, 1fr) minmax(260px, 0.9fr);
   gap: 18px;
@@ -553,13 +553,13 @@ li {
   box-shadow: 0 14px 34px rgba(47, 34, 25, 0.1);
 }
 
-.publish-copy h2 {
+.recipe-copy h2 {
   margin: 0;
   font-size: clamp(28px, 4vw, 42px);
   line-height: 1;
 }
 
-.publish-copy p:not(.eyebrow),
+.recipe-copy p:not(.eyebrow),
 .saved-recipes p {
   color: var(--muted);
   line-height: 1.5;
@@ -745,7 +745,7 @@ li {
     border-bottom: 1px solid rgba(44, 36, 31, 0.1);
   }
 
-  .publish-panel {
+  .recipe-panel {
     grid-template-columns: 1fr;
     padding: 18px;
   }
