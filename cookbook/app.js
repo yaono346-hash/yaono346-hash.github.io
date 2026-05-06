@@ -443,9 +443,9 @@ function customRecipeToBookRecipe(savedRecipe) {
 
   return {
     title: savedRecipe.title,
-    description: `Published by ${savedRecipe.chef}. Added to the ${savedRecipe.flavor.toLowerCase()} category from your own recipe shelf.`,
+    description: `Created by ${savedRecipe.chef}. Added to the ${savedRecipe.flavor.toLowerCase()} category from your own recipe shelf.`,
     time: "Your recipe",
-    level: "Published",
+    level: "Saved",
     label: detail[0],
     color: pick(colors, savedRecipe.id.length, colorOffset),
     ingredients: savedRecipe.ingredients,
@@ -467,7 +467,7 @@ function renderSavedRecipes() {
 
   if (savedRecipes.length === 0) {
     const empty = document.createElement("p");
-    empty.textContent = "No published recipes yet.";
+    empty.textContent = "No saved recipes yet.";
     savedRecipeList.appendChild(empty);
     return;
   }
